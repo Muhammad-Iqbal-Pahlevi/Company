@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FutureTech - AI Revolution</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
+</head>
+<body class="bg-gray-900 text-white">
+
+    <!-- Header Section -->
+    <!-- Header -->
+    <nav class="bg-gray-800 p-4 sticky top-0">
+        <div class="container mx-auto flex justify-between items-center">
+        
+            <span class="ml-3 text-lg text-gray-100 font-semibold">FutureTech</span>
+        
+            <nav class="hidden md:flex gap-4">
+                <a href="#" class="text-gray-100 hover:text-yellow-500">Home</a>
+                <a href="blog.html" class="text-gray-100 hover:text-yellow-500">Blog</a>
+                <a href="contact.html" class="text-gray-100 hover:text-yellow-500">Contact</a>
+            </nav>
+            <button id="menuButton" class="md:hidden text-yellow-400 focus:outline-none">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+                </svg>
+            </button>
+        </div>
+    </nav>
+
+    <div id="mobileMenu" class="fixed top-0 right-0 h-full w-2/3 bg-gray-800 text-white transform translate-x-full transition-transform duration-300 ease-in-out z-50">
+        <!-- Close button -->
+        <div class="flex justify-end p-4">
+            <button id="closeButton" class="text-yellow-400 focus:outline-none">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
+                </svg>
+            </button>
+        </div>
+        <!-- Sidebar navigation links -->
+        <nav class="flex flex-col items-center space-y-6 mt-8">
+            <a href="" class="text-lg hover:text-yellow-400">Home</a>
+            <a href="blog.html" class="text-lg hover:text-yellow-400">Blog</a>
+            <a href="contact.html" class="text-lg hover:text-yellow-400">Contact</a>
+            <button class="bg-yellow-500 text-black px-4 py-2 rounded">Subscribe</button>
+        </nav>
+    </div>
+    <!-- Hero Section -->
+    <section class="bg-cover p-4 bg-center" style="background-image: url('/img/hero-3.jpg'); height: 500px;">
+        <div class="container mx-auto h-full flex flex-col justify-center items-center text-center text-white">
+            <h1 class="text-4xl md:text-5xl font-bold mb-4 ">Explore the Frontiers of Artificial Intelligence</h1>
+            <p class="text-lg md:text-xl ">Discover insights, research, and tools to help you stay ahead in the world of AI.</p>
+        </div>
+    </section>
+
+    <!-- Stats Section -->
+    <section class="bg-gray-800 py-12">
+        <div class="container mx-auto grid grid-cols-1 md:grid-cols-3 gap-6 text-center">
+            <div>
+                <h2 class="text-3xl font-bold text-yellow-500">300+</h2>
+                <p>AI Resources</p>
+            </div>
+            <div>
+                <h2 class="text-3xl font-bold text-yellow-500">12k+</h2>
+                <p>Active Users</p>
+            </div>
+            <div>
+                <h2 class="text-3xl font-bold text-yellow-500">10k+</h2>
+                <p>Community Members</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section class="py-12">
+        <div class="container mx-auto text-center p-4">
+            <h2 class="text-4xl font-bold mb-8">FutureTech Features</h2>
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-6">
+                <div class="p-6 bg-gray-800 rounded shadow" data-aos="fade-up" >
+                    <img src="/img/hero-1.jpg" alt="" class="rounded mb-2 border-2 ">
+                    <h3 class="text-xl font-semibold mb-4">Quality Content</h3>
+                    <p class="text-xs font-light">Stay updated with the latest trends and insights from the AI industry.</p>
+                </div>
+                <div class="p-6 bg-gray-800 rounded shadow" data-aos="fade-up">
+                    <img src="/img/hero-1.jpg" alt="" class="rounded mb-2 border-2 ">
+
+                    <h3 class="text-xl font-semibold mb-4">E-books & Whitepapers</h3>
+                    <p class="text-xs font-light">Access in-depth resources to enhance your understanding.</p>
+                </div>
+                <div class="p-6 bg-gray-800 rounded shadow" data-aos="fade-up">
+                    <img src="/img/hero-1.jpg" alt="" class="rounded mb-2 border-2 ">
+                    <h3 class="text-xl font-semibold mb-4">Community Forum</h3>
+                    <p class="text-xs font-light">Engage with like-minded people and AI professionals worldwide.</p>
+                </div>
+                <div class="p-6 bg-gray-800 rounded shadow" data-aos="fade-up">
+                    <img src="/img/hero-1.jpg" alt="" class="rounded mb-2 border-2 ">
+                    <h3 class="text-xl font-semibold mb-4">Research Insights</h3>
+                    <p class="text-xs font-light">Explore ground-breaking research and articles written by experts.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section style="background-image: url('/img/hero-3.jpg'); height: 300px;" class="bg-center bg-cover bg-fixed"></section>
+
+    <!-- Blog Posts Section -->
+    <section class="bg-gray-900 py-12">
+        <div class="container mx-auto text-center p-4">
+            <h2 class="text-4xl font-bold mb-8">Explore Our Latest Blog Posts</h2>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                <div class="bg-gray-800 p-6 rounded" data-aos="flip-up">
+                    <img src="/img/hero-2.jpg" alt="" class="rounded mb-2 border-2 ">
+
+                    <h3 class="text-xl font-semibold mb-4">The Quantum Leap in Computing</h3>
+                    <p class="mb-4">Dive deep into how quantum computing is revolutionizing AI development.</p>
+                    <a href="#" class="text-yellow-500 hover:underline">Read More</a>
+                </div>
+                <div class="bg-gray-800 p-6 rounded" data-aos="flip-up">
+                    <img src="/img/hero-2.jpg" alt="" class="rounded mb-2 border-2 ">
+
+                    <h3 class="text-xl font-semibold mb-4">The Ethical Dilemmas of AI</h3>
+                    <p class="mb-4">An exploration of the moral and ethical considerations in AI technology.</p>
+                    <a href="#" class="text-yellow-500 hover:underline">Read More</a>
+                </div>
+                <div class="bg-gray-800 p-6 rounded" data-aos="flip-up">
+                    <img src="/img/hero-2.jpg" alt="" class="rounded mb-2 border-2 ">
+
+                    <h3 class="text-xl font-semibold mb-4">The New Constantinian Challenge</h3>
+                    <p class="mb-4">Understand the latest challenges in AI and machine learning models.</p>
+                    <a href="#" class="text-yellow-500 hover:underline">Read More</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Resources Section -->
+    <section class="py-12">
+        <div class="container mx-auto text-center">
+            <h2 class="text-4xl font-bold mb-8">Unlock Valuable Knowledge</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                <div class="bg-gray-800 p-6 rounded">
+                    <h3 class="text-xl font-semibold mb-4">Free E-books</h3>
+                    <p>Access top-tier e-books written by AI industry experts.</p>
+                </div>
+                <div class="bg-gray-800 p-6 rounded">
+                    <h3 class="text-xl font-semibold mb-4">Insightful Whitepapers</h3>
+                    <p>Read whitepapers on cutting-edge AI technology and research.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer Section -->
+    <footer class="bg-gray-800 text-gray-200 py-12">
+        <div class="container mx-auto px-4">
+            <!-- Informasi Kontak -->
+            <div class="flex flex-col md:flex-row justify-between items-center md:items-start text-center md:text-left space-y-6 md:space-y-0">
+                <!-- Informasi Perusahaan -->
+                <div class="w-full md:w-1/3 space-y-4">
+                    <h3 class="text-lg font-semibold text-yellow-400">PerusahaanUnik</h3>
+                    <p>Jl. Sukses No. 1, Jakarta</p>
+                    <p>Email: info@perusahaanunik.com</p>
+                    <p>Telepon: +62 123 4567 890</p>
+                </div>
+                <!-- Navigasi Footer -->
+                <div class="w-full md:w-1/3 space-y-2">
+                    <h3 class="text-lg font-semibold text-yellow-400">Navigasi</h3>
+                    <ul class="flex flex-col space-y-2">
+                        <li><a href="#home" class="hover:text-yellow-400 transition duration-300">Home</a></li>
+                        <li><a href="#about" class="hover:text-yellow-400 transition duration-300">About</a></li>
+                        <li><a href="#services" class="hover:text-yellow-400 transition duration-300">Services</a></li>
+                        <li><a href="#projects" class="hover:text-yellow-400 transition duration-300">Projects</a></li>
+                        <li><a href="#testimonials" class="hover:text-yellow-400 transition duration-300">Testimonials</a></li>
+                        <li><a href="#contact" class="hover:text-yellow-400 transition duration-300">Contact</a></li>
+                    </ul>
+                </div>
+                <!-- Sosial Media -->
+                <div class="w-full md:w-1/3 space-y-2">
+                    <h3 class="text-lg font-semibold text-yellow-400">Ikuti Kami</h3>
+                    <ul class="flex flex-col space-y-2">
+                        <li><a href="#home" class="hover:text-yellow-400 transition duration-300">Instagram</a></li>
+                        <li><a href="#about" class="hover:text-yellow-400 transition duration-300">Youtube</a></li>
+                        <li><a href="#services" class="hover:text-yellow-400 transition duration-300">Facebook</a></li>
+                        <li><a href="#projects" class="hover:text-yellow-400 transition duration-300">Twitter</a></li>
+                        <li><a href="#testimonials" class="hover:text-yellow-400 transition duration-300">Tiktok</a></li>
+                    </ul>
+                </div>
+            </div>
+    
+            <!-- Hak Cipta -->
+            <div class="mt-10 border-t border-gray-600 pt-4 text-center">
+                <p>&copy; 2024 PerusahaanUnik. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+    
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+
+<script>
+    const menuButton = document.getElementById('menuButton');
+    const closeButton = document.getElementById('closeButton');
+    const mobileMenu = document.getElementById('mobileMenu');
+
+    // Show sidebar
+    menuButton.addEventListener('click', () => {
+        mobileMenu.classList.remove('translate-x-full');
+    });
+
+    // Hide sidebar
+    closeButton.addEventListener('click', () => {
+        mobileMenu.classList.add('translate-x-full');
+    });
+</script>
+
+</body>
+</html>
